@@ -1,0 +1,141 @@
+/* Reset basic defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+}
+
+/* Main layout */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  min-height: 100vh;
+  gap: 40px;
+}
+
+/* Image styling */
+.register-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Form container styling */
+.container {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  /* max-height: 1000px; */
+  width: 100%;
+  background: #ffffff;
+  /* padding: 40px; */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  /* margin-bottom: 30px; */
+}
+
+/* Form fields */
+form {
+  display: flex;
+ 
+  flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  /* margin-bottom: 15px; */
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border 0.3s;
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid #00796b;
+}
+
+/* Error messages */
+span {
+  font-size: 0.85rem;
+  color: red;
+  margin-bottom: 8px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  padding: 12px 15px;
+  font-size: 1rem;
+  background: #00796b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #004d40;
+}
+
+/* User exist message */
+.exist-content {
+  text-align: center;
+  /* margin-top: 20px; */
+}
+
+.exist-content p {
+  color: #00796b;
+  cursor: pointer;
+  font-weight: bold;
+  transition: text-decoration 0.3s ease;
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .register-image img {
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+}
