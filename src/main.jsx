@@ -19,7 +19,7 @@ createRoot(document.getElementById('root')).render(
     <Route path='/' element={<RegisterForm />} />
     <Route path='/login' element={<Login />} />
     <Route path='/home' element={<App />} />
-    <Route path='/cardDetails' element={<CardDetails />} />
+    <Route path='/cardDetails' element={<CardDetails/>} />
   </Routes>
   </BrowserRouter>
   </StrictMode>,
