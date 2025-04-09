@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import img from '../assets/loading-gif.gif'
-import './cardDetails.css'
+import './CardDetails.css'
 
 export default function CardDetails() {
     let [loading,setLoading]=useState(true)

@@ -8,12 +8,6 @@ import Login from './Components/Login.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <BrowserRouter>
-    <Routes>
-    <Route path='/' element={<App />}/>
-    <Route path='/cardDetails' element={<CardDetails />} />
-    </Routes>
-    </BrowserRouter> */}
   <BrowserRouter>
   <Routes>
     <Route path='/' element={<RegisterForm />} />
