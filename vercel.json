@@ -6,15 +6,15 @@
         },
         {
             "src":"/login",
-            "dest":"/login"
+            "dest":"/"
         },
         {
             "src":"/home",
-            "dest":"/home"
+            "dest":"/"
         },
         {
             "src":"/cardDetails",
-            "dest":"/cardDetails"
+            "dest":"/"
         }
     ]
 }
